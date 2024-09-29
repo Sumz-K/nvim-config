@@ -3,7 +3,7 @@ return {"nvim-treesitter/nvim-treesitter",
   config=function()
     local tsconfig=require("nvim-treesitter.configs")
     tsconfig.setup({
-      ensure_installed={"lua","go","c"},
+      auto_install=true,
       highlight={enable=true},
       indent={enable=true},
     })
